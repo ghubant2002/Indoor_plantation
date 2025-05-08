@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoNest - One of India's Finest Indoor Plantation Store</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <link rel="icon" type="image/x-icon" href="images/leaf.png">
+    <link href="css/cmwork.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+<!-- chatbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+    <link rel="stylesheet" href="css/chatbot.css">
+    
+
+<!-- dark -->
+<link href="css/styles.css" rel="stylesheet">
+<!--=============== REMIX ICONS ===============-->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<!-- chatbox -->
+
+<!-- <link href="css/chatbox.css" rel="stylesheet"> -->
+
+<!-- Responsive nav bar -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+<link href="css/style2.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <button class="chatbox-open">
+        <i class="fa fa-comment fa-2x" aria-hidden="true"></i>
+      </button>
+    <button class="chatbox-close">
+        <i class="fa fa-close fa-2x" aria-hidden="true"></i>
+      </button>
+    <section class="chatbox-popup">
+      <header class="chatbox-popup__header">
+        <aside style="flex:3">
+          <i class="fa fa-user-circle fa-4x chatbox-popup__avatar" aria-hidden="true"></i>
+        </aside>
+        <aside style="flex:8">
+          <h1 class="col">EcoNest</h1> Agent (Online)
+        </aside>
+        <aside style="flex:1">
+          <button class="chatbox-maximize"><i class="fa fa-window-maximize" aria-hidden="true"></i></button>
+        </aside>
+      </header>
+      <main class="chatbox-popup__main">
+        We make it simple and seamless for<br> bussiness and people to talk to each<br> other. Ask us anything.
+      </main>
+      <footer class="chatbox-popup__footer">
+        <aside style="flex:1;color:#888;text-align:center;">
+          <i class="fa fa-camera" aria-hidden="true"></i>
+        </aside>
+        <aside style="flex:10">
+          <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+        </aside>
+        <aside style="flex:1;color:#888;text-align:center;">
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </aside>
+      </footer>
+    </section>
+    <section class="chatbox-panel">
+      <header class="chatbox-panel__header">
+        <aside style="flex:3">
+          <i class="fa fa-user-circle fa-3x chatbox-popup__avatar" aria-hidden="true"></i>
+        </aside>
+        <aside style="flex:6">
+          <h1 class="col">Sussanah Austin</h1> Agent (Online)
+        </aside>
+        <aside style="flex:3;text-align:right;">
+          <button class="chatbox-minimize"><i class="fa fa-window-restore" aria-hidden="true"></i></button>
+          <button class="chatbox-panel-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+        </aside>
+      </header>
+      <main class="chatbox-panel__main" style="flex:1">
+        We make it simple and seamless for<br> bussiness and people to talk to each<br> other. Ask us anything.
+      </main>
+      <footer class="chatbox-panel__footer">
+        <aside style="flex:1;color:#888;text-align:center;">
+          <i class="fa fa-camera" aria-hidden="true"></i>
+        </aside>
+        <aside style="flex:10">
+          <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+        </aside>
+        <aside style="flex:1;color:#888;text-align:center;">
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </aside>
+      </footer>
+    </section>
+
+    <!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    
+    <div class="container2">
+        <div class="row">
+            <div class="logo">
+                <a href="#"><img src="images/econest3.png" alt=""></a>
+            </div>
+
+            <div class="search-box">
+                <input type="text" class="search-bar" placeholder="Search for plants, seeds and planters...">
+                <a href="" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+
+            <a href="#" class="wishlist">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+
+            <a href="#" class="cart">
+                <i class="fa-solid fa-cart-shopping shop"></i>
+            </a>
+
+            <a href="#" class="user">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <div class="sign-up">
+                <a href="#"><h4 class="gap">Sign Up</h4></a>
+            </div>
+
+            <div class="login">
+                <a href="#"><h4 class="gap">Login</h4></a>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+    
+    <!-- Responsive Nav Bar -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="menu-box">
+                <header class="header" id="header">
+                    <nav class="navbar container">
+                         <section class="navbar__left">
+                        <!-- <a href="#" class="brand">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 192.756 192.756">
+                            <g fill-rule="evenodd" clip-rule="evenodd">
+                                <path fill="#fff" fill-opacity="0" d="M0 0h192.756v192.756H0V0z" />
+                                <path d="M130.424 44.314c6.051-3.026 9.156-2.561 9.234.465.076 3.957-.545 9.233-.934 13.035-2.326 20.64-6.051 37.477-6.361 58.737 10.01-25.916 18.312-43.762 29.098-65.875 3.414-7.061 5.664-5.742 8.457-7.061 10.941-4.889 11.328-1.863 9.854 4.189-5.275 21.959-18.777 91.403-20.871 102.035-.621 3.104-4.035 1.862-4.811.621-4.035-5.354-8.381-5.433-7.916-9.079 2.484-17.69 11.33-62.461 13.58-73.014-11.717 23.897-23.822 53.926-30.027 70.84-1.32 3.57-3.725 3.338-5.199.699-2.174-3.803-6.209-5.664-6.828-10.009-2.174-13.89 2.404-40.426 3.025-57.263-6.285 18.311-16.992 54.004-21.648 70.064-1.939 6.674-8.379 5.51-6.672-.853 7.137-27.08 22.424-74.799 29.018-91.947 1.552-4.11 5.663-3.877 9.001-5.584zM91.783 40.978c-2.096-.465-8.148 2.793-11.872 3.337-1.163.311-2.25 1.474-2.637 2.404C71.375 60.297 66.1 73.179 61.6 84.816a711.997 711.997 0 0 0-20.33 4.035c5.509-13.966 11.019-27.854 16.372-41.124 2.638-6.672-4.344-7.293-7.062-.62-3.491 8.613-10.087 24.828-17.38 43.685-5.354 1.319-11.174 2.793-17.07 4.578-4.345 1.163-4.501 2.326-2.639 4.966 1.086 1.396 3.104 1.241 4.113 2.328 2.561 2.637 4.113 5.819 8.689 6.284-4.189 10.863-8.225 21.959-11.793 32.589-2.328 6.75 4.267 8.147 6.75 1.009 4.035-11.406 8.302-22.967 12.726-34.685 3.647-.775 12.415-2.637 20.562-4.5-6.44 17.846-10.63 31.27-12.338 37.865-.309 1.241.311 1.862.543 2.482 2.096 3.104 4.268 3.259 7.061 7.217.699 1.087 3.259 1.629 4.191-1.009a1241.157 1241.157 0 0 1 17.768-50.279c2.406-.621 6.752-1.63 9.389-5.509 4.656-6.984 5.976-5.586 7.217-7.682 1.396-2.715.387-5.121-4.578-4.578 0 0-1.863.156-5.432.544 5.586-14.2 10.554-26.226 13.967-35.46 1.163-3.181 1.32-5.509-.543-5.974z" fill="#c7232f" />
+                                <path d="M86.325 129.153c.807-1.024 1.539-2.081 2.199-3.057 2.94-4.35.078-6.907-2.948-4.346-.432.397-.881.83-1.327 1.28a980.885 980.885 0 0 1-1.477-4.66c1.387-1.7 2.737-3.445 3.889-5.233 4.863-7.542-4.654-11.871-8.768-6.982-2.171 2.561-1.628 5.121-1.008 7.371.18.676.46 1.642.807 2.814a104.967 104.967 0 0 0-4.376 4.866c-4.733 5.433-3.417 12.428 1.552 13.967 2.996.929 5.823-.425 8.272-2.585.118.308.231.601.341.879 1.319 3.259 5.432 2.25 3.802-1.707-.262-.665-.59-1.56-.958-2.607zm-6.736-6.837c.402 1.267.835 2.598 1.267 3.872-.541.451-1.09.907-1.643 1.227-1.924 1.113-3.337-.078-.854-3.414.406-.576.822-1.134 1.23-1.685zm1.553-9.501c-.143-.361-.225-.715-.3-.996-1.392-5.2 4.568-3.811 1.553-.388-.428.485-.817.965-1.253 1.384z" fill="#c7232f" />
+                            </g>
+                            </svg>
+                        </a> -->
+                        <div class="burger" id="burger">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </div>
+                        </section>
+                        <section class="navbar__center">
+                            <span class="overlay"></span>
+                            <div class="menu" id="menu">
+                              <div class="menu__header">
+                                <span class="menu__arrow"><i class="bx bx-chevron-left"></i></span>
+                                <span class="menu__title"></span>
+                              </div>
+                              <ul class="menu__inner">
+                                <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+                                <li class="menu__item menu__dropdown">
+                                  <a href="#" class="menu__link">
+                                    Products
+                                    <i class="bx bx-chevron-right"></i>
+                                  </a>
+                                  <div class="submenu megamenu__text">
+                                    <div class="submenu__inner">
+                                      <ul class="submenu__list">
+                                        <li><a href="#">Specialty Plants & Herbs</a></li>
+                                        <li><a href="#">Flowering Plants</a></li>
+                                        <li><a href="#">Low Maintenance Plants</a></li>
+                                        <li><a href="#">Air Purufying Plants</a></li>
+                                        <li><a href="#">Low Light Plants</a></li>
+                                        <li><a href="#">Cacti & Succulents</a></li>
+                                        <li><a href="#">Hanging Plants</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="submenu__inner">
+                                      <ul class="submenu__list">
+                                        <li><a href="#">Medicinal & Aromatic Plants</a></li>
+                                        <li><a href="#">Pet Friendly Plants</a></li>
+                                        <li><a href="#">Plant Bundles & Seeds</a></li>
+                                        <li><a href="#">New Arrivals</a></li>
+                                        <li><a href="#">Pots & Planters</a></li>
+                                        <li><a href="#">Shop By Name</a></li>
+                                        <li><a href="#">Shop By Location</a></li>
+                                      </ul>
+                                    </div>
+                                   </div>
+                                </li>
+                                <li class="menu__item menu__dropdown">
+                                  <a href="#" class="menu__link">
+                                    Essentials
+                                    <i class="bx bx-chevron-right"></i>
+                                  </a>
+                                  <div class="submenu megamenu__normal">
+                                    <ul class="submenu__list">
+                                      <li><a href="#">Potting Mix & Fertilizers</a></li>
+                                      <li><a href="#">Climate Control Systems</a></li>
+                                      <li><a href="#">Watering Tools & Accessories</a></li>
+                                      <li><a href="#">Garden Decor & Accessories</a></li>
+                                      <li><a href="#">Pest Control</a></li>
+                                      <li><a href="#">Video Consultation</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="menu__item menu__dropdown">
+                                  <a href="#" class="menu__link">
+                                    Blog
+                                    <i class="bx bx-chevron-right"></i>
+                                  </a>
+                                  <div class="submenu megamenu__normal">
+                                    <ul class="submenu__list">
+                                      <li><a href="#">Gardening Basics</a></li>
+                                      <li><a href="#">Garden Maintenance</a></li>
+                                      <li><a href="#">Kitchen Gardening</a></li>
+                                      <li><a href="#">Ornamental Gardening</a></li>
+                                      <li><a href="#">Green Lifestyle</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="menu__item menu__dropdown">
+                                    <a href="#" class="menu__link">
+                                      Faq's
+                                      <i class="bx bx-chevron-right"></i>
+                                    </a>
+                                    <div class="submenu megamenu__normal">
+                                      <ul class="submenu__list">
+                                        <li><a href="#">What is Indoor Plantation?</a></li>
+                                        <li><a href="#">How to Care For Indoor Plants?</a></li>
+                                        <li><a href="#">How to Repot Houseplants?</a></li>
+                                        <li><a href="#">What are Common Indoor Plant Problems?</a></li>
+                                        <li><a href="#">Can Plants Improve Air Quality?</a></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="menu__item menu__dropdown">
+                                    <a href="#" class="menu__link">
+                                      Gifts
+                                      <i class="bx bx-chevron-right"></i>
+                                    </a>
+                                    <div class="submenu megamenu__normal">
+                                      <ul class="submenu__list">
+                                        <li><a href="#">Environmental Day Gifting</a></li>
+                                        <li><a href="#">Corporate/Bulk Gifting</a></li>
+                                        <li><a href="#">Personalised Gifting</a></li>
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Best-Selling Plant Gifts</a></li>
+                                        <li><a href="#">Seasonal Gifts</a></li>
+                                        <li><a href="#">Gift Wrapping Options</a></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="menu__item menu__dropdown">
+                                    <a href="#" class="menu__link">
+                                      Explore
+                                      <i class="bx bx-chevron-right"></i>
+                                    </a>
+                                    <div class="submenu megamenu__normal">
+                                      <ul class="submenu__list">
+                                        <li><a href="#">Your Orders</a></li>
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Payment Options</a></li>
+                                        <li><a href="#">Message Centre</a></li>
+                                        <li><a href="#">Personalisation</a></li>
+                                        <li><a href="#">Manage Your Data</a></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                              </ul>
+                            </div>
+                          </section>
+                          <section class="navbar__right">
+                            <button class="switch" id="switch">
+                              <!-- <span class="switch__light"><i class="bx bx-sun"></i></span>
+                              <span class="switch__dark"><i class="bx bx-moon"></i></span> -->
+                            </button>
+                        </section>
+                    </nav>
+                </header>
+                        
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid-02">
+        <div class="row">
+            <section class="hero-slider hero-style">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slide-inner slide-bg-image" style="background-image: url(images/ban_img_1.png);">
+                            <div class="ban-text">
+                                <div class="econest">
+                                    <h4 class="cap2">EcoNest Exclusive</h4>
+                                </div>
+                                <h1 class="ban-head">Explore</h1>
+                                <h1 class="ban-subhead">A Vast Collection of</h1>
+                                <h1 class="ban-subhead">Vibrant & Thriving Plants</h1>
+                                <h1 class="ban-head-2">Online</h1>
+
+                                <h2 class="ban-head-3">20% Discount For Our Members</h2>
+                                <button type="button" class="learn">Learn More</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div data-swiper-parallax="500" class="slide-btns"></div>
+                        </div>
+                      <!-- end slide-inner -->
+                    </div>
+                    <!-- end swiper-slide -->
+              
+                    <div class="swiper-slide">
+                      <div class="slide-inner slide-bg-image" style="background-image: url(images/ban_img_2.png);">
+                            <div class="ban-text">
+                                <div class="econest">
+                                    <h4 class="cap2">EcoNest Exclusive</h4>
+                                </div>
+                                <h1 class="ban-head">Transform</h1>
+                                <h1 class="ban-subhead">Your Indoor Space With</h1>
+                                <h1 class="ban-subhead">Our Curated Collection of Exotic</h1>
+                                <h1 class="ban-head-2">Plants</h1>
+
+                                <h2 class="ban-head-3">20% Discount For Our Members</h2>
+                                <button type="button" class="learn">Learn More</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div data-swiper-parallax="500" class="slide-btns"></div>
+                       </div>
+                      <!-- end slide-inner -->
+                    </div>
+                    <!-- end swiper-slide -->
+
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" style="background-image: url(images/ban_img_3.png);">
+                            <div class="ban-text">
+                                <div class="econest">
+                                    <h4 class="cap2">EcoNest Exclusive</h4>
+                                </div>
+                                <h1 class="ban-head">Embrace</h1>
+                                <h1 class="ban-subhead">The Season of Growth</h1>
+                                <h1 class="ban-subhead">With Our Spring Gardening</h1>
+                                <h1 class="ban-head-2">Essentials</h1>
+
+                                <h2 class="ban-head-3">20% Discount For Our Members</h2>
+                                <button type="button" class="learn">Learn More</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div data-swiper-parallax="500" class="slide-btns"></div>
+                        </div>
+                        <!-- end slide-inner -->
+                    </div>
+                  </div>
+                  <!-- end swiper-wrapper -->
+              
+                  <!-- swipper controls -->
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="ban-box">
+                <img src="images/ban_img_2_2.png" alt="">
+                <a href="#" class="left-arr">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <a href="#" class="right-arr">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <div class="ban-text">
+                    <h1 class="head1">Explore</h2>
+                    <h1 class="head2">A Vast Collection of</h2>
+                    <h1 class="head2">Vibrant & Thriving Plants</h2>
+                    <h1 class="head3">Online</h2>
+                    <h2 class="head4">20% Discount For Our Members</h2>
+
+                    <div class="learn">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="ban-text-2">
+                    <h4 class="head5">EcoNest Exclusive</h4>
+                </div>
+
+                <div class="ban-text-3">
+                    <p>
+                        <span>*</span>
+                        <span>T&C APPLY</span>
+                    </p>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+
+    <div class="container-fluid-03" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="row">
+            <div class="box-100">
+                <h1 class="head6">Experience The Difference</h1>
+            </div>
+
+            <div class="box-100-02">
+                <p class="para">
+                    Step into our lush indoor plantation store and discover a world where nature thrives indoors
+                </p>
+            </div>
+
+            <div class="box-93">
+                <div class="item">
+                    <a href="#"><img src="images/img_1_2.png" alt=""></a>
+                    <a href="#" class="tag">
+                        <h1 class="head8">View Details</h1>
+                        <div class="eye"><i class="fa-solid fa-eye"></i></div>
+                    </a>
+                </div>
+
+                <div class="item1">
+                    <h1 class="head7">MADE EASY</h1>
+                    <p class="para-2">
+                        EcoNest helps you to discover
+                    </p>
+                    <p class="para-2">
+                        the best plants for your space,
+                    </p>
+                    <p class="para-2">
+                        delivers them to your door and
+                    </p>
+                    <p class="para-2">
+                        helps you look after them.
+                    </p>
+
+                    <div class="brush">
+                        <img src="images/brush.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href=""><img src="images/img_2_2.png" alt=""></a>
+                    <a href="#" class="tag">
+                        <h1 class="head8">View Details</h1>
+                        <div class="eye"><i class="fa-solid fa-eye"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid-03" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="row">
+            <div class="box-100-03">
+                <h1 class="head6">Shop By Categories</h1>
+            </div>
+
+            <div class="box-100-02">
+                <p class="para">
+                    Transform your space with everything you need to nurture your indoor garden
+                </p>
+            </div>
+
+            <div class="box-93">
+                <div class="item2">
+                    <a href="#"><img src="images/img_3.jpg" alt=""></a>
+                    <button type="button" class="tag2"><span>Indoor Plants </span></button>
+                </div>
+
+                <div class="item2">
+                    <a href="#"><img src="images/img_4.png" alt=""></a>
+                    <button type="button" class="tag3"><span>Plant Care </span></button>
+                </div>
+
+                <div class="item2">
+                    <a href="#"><img src="images/img_7.jpg" alt=""></a>
+                    <button type="button" class="tag4"><span>Tools & Accessories </span></button>
+                </div>
+
+                <div class="item2">
+                    <a href="#"><img src="images/img_8.jpg" alt=""></a>
+                    <button type="button" class="tag2"><span>Green Gifting </span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid-03" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="row">
+            <div class="box-100-04">
+                <h1 class="head6">Blooming Bestsellers</h1>
+            </div>
+
+            <div class="box-100-07">
+                <p class="para">
+                    Explore our Blooming Bestsellers collection where nature's finest meets your indoor sanctuary
+                </p>
+            </div>
+
+            <div class="box-100-06">
+                <a href="#"><p class="cap">See All</p></a>
+            </div>
+
+            <div class="box-93">
+                <div class="card">
+                    <div class="item3">
+                        <a href="#"><img src="images/img_9.jpg" alt=""></a>
+                        <div class="pos">
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+
+                            <a href="#" class="btn-2">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item4">
+                        <h1 class="head9">Aechmea Pink</h1>
+                        <p class="para-3">Low Maintenance Plants</p>
+                        <div class="rating">
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star-stroke.png" alt="">
+                            </div>
+                        </div>
+    
+                        <p class="para-4">
+                            <span>INR 4,100</span>
+                            <span>INR 4,200</span>
+                        </p>
+    
+                        <button class="button button--anim">
+                            <span>
+                                <span>Product Details</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="item3 box-sm">
+                        <a href="#"><img src="images/img_10.jpg" alt=""></a>
+                        <div class="pos">
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+    
+                            <a href="#" class="btn-2">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+    
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+    
+                        <div class="pos-2">
+                            <h1 class="tag5">Top Rated</h1>
+                        </div>
+                    </div>
+
+                    <div class="item4">
+                        <h1 class="head9">Bird of Paradise</h1>
+                        <p class="para-3">Ornamental Flowering Plants</p>
+                        <div class="rating">
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <p class="para-4">
+                            <span>INR 4,270</span>
+                            <span>INR 4,370</span>
+                        </p>
+                        
+                        <button class="button button--anim">
+                            <span>
+                                <span>Product Details</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card smart6">
+                    <div class="item3 smart box-sm">
+                        <a href="#"><img src="images/img_11.jpg" alt=""></a>
+                        <div class="pos">
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+    
+                            <a href="#" class="btn-2">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+    
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item4">
+                        <h1 class="head9">Snake Plant</h1>
+                        <p class="para-3">Air Purifying Plants</p>
+                        <div class="rating">
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star-stroke.png" alt="">
+                            </div>
+                        </div>
+    
+                        <p class="para-4">
+                            <span>INR 1,100</span>
+                            <span>INR 2,100</span>
+                        </p>
+    
+                        <button class="button button--anim">
+                            <span>
+                                <span>Product Details</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card smart6">
+                    <div class="item3 smart box-sm">
+                        <a href="#"><img src="images/img_12.webp" alt=""></a>
+                        <div class="pos">
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+    
+                            <a href="#" class="btn-2">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+    
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+    
+                        <div class="pos-2">
+                            <h1 class="tag5">Top Rated</h1>
+                        </div>
+                    </div>
+
+                    <div class="item4">
+                        <h1 class="head9">Burgundy</h1>
+                        <p class="para-3">Air Purifying Plants</p>
+                        <div class="rating">
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+                        </div>
+    
+                        <p class="para-4">
+                            <span>INR 1,500</span>
+                            <span>INR 1,600</span>
+                        </p>
+                        
+                        <button class="button button--anim">
+                            <span>
+                                <span>Product Details</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="container-fluid-03" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="row">
+            <div class="box-100-05 box-sm-2">
+                <h1 class="head6">New Arrivals</h1>
+            </div>
+
+            <div class="box-100-07">
+                <p class="para">
+                    From lush greens to exotic blooms discover fresh greenery for your space with our latest additions
+                </p>
+            </div>
+
+            <div class="box-100-06">
+                <a href="#"><p class="cap">See All</p></a>
+            </div>
+
+            <div class="box-93">
+                <div class="card">
+                    <div class="item3">
+                        <a href="#"><img src="images/img_13.jpg" alt=""></a>
+                        <div class="pos">
+                            <a href="#" class="btn-3">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+
+                            <a href="#" class="btn-4">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+
+                            <a href="#" class="btn-3">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item4">
+                        <h1 class="head9">Money Plant</h1>
+                        <p class="para-3">Pet Friendly Plants</p>
+                        <div class="rating">
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star-stroke.png" alt="">
+                            </div>
+                        </div>
+    
+                        <p class="para-4">
+                            <span>INR 1,200</span>
+                            <span>INR 1,300</span>
+                        </p>
+    
+                        <button class="button button--anim">
+                            <span>
+                                <span>Product Details</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="item3 box-sm">
+                        <a href="#"><img src="images/img_14.jpg" alt=""></a>
+                        <div class="pos">
+                            <a href="#" class="btn-3">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+    
+                            <a href="#" class="btn-4">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+    
+                            <a href="#" class="btn-3">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+    
+                        <div class="pos-2">
+                            <h1 class="tag5">Top Rated</h1>
+                        </div>
+                    </div>
+
+                    <div class="item4">
+                        <h1 class="head9">Fiery Philo Trio</h1>
+                        <p class="para-3">Low Maintenance Plants</p>
+                        <div class="rating">
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <p class="para-4">
+                            <span>INR 870</span>
+                            <span>INR 970</span>
+                        </p>
+                        
+                        <button class="button button--anim">
+                            <span>
+                                <span>Product Details</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card smart6">
+                    <div class="item3 smart box-sm">
+                        <a href="#"><img src="images/img_15.jpg" alt=""></a>
+                        <div class="pos">
+                            <a href="#" class="btn-3">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+    
+                            <a href="#" class="btn-4">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+    
+                            <a href="#" class="btn-3">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item4">
+                        <h1 class="head9">Dracaena Golden Heart</h1>
+                        <p class="para-3">Low Light Plants</p>
+                        <div class="rating">
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star-stroke.png" alt="">
+                            </div>
+                        </div>
+    
+                        <p class="para-4">
+                            <span>INR 2,125</span>
+                            <span>INR 2,225</span>
+                        </p>
+    
+                        <button class="button button--anim">
+                            <span>
+                                <span>Product Details</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card smart6">
+                    <div class="item3 smart box-sm">
+                        <a href="#"><img src="images/img_16.jpg" alt=""></a>
+                        <div class="pos">
+                            <a href="#" class="btn-3">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+    
+                            <a href="#" class="btn-4">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+    
+                            <a href="#" class="btn-3">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+    
+                        <div class="pos-2">
+                            <h1 class="tag5">Top Rated</h1>
+                        </div>
+                    </div>
+
+                    <div class="item4">
+                        <h1 class="head9">Variegated Schefflera</h1>
+                        <p class="para-3">Low Light Plants</p>
+                        <div class="rating">
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+    
+                            <div class="star">
+                                <img src="images/star_1.png" alt="">
+                            </div>
+                        </div>
+    
+                        <p class="para-4">
+                            <span>INR 985</span>
+                            <span>INR 1,085</span>
+                        </p>
+                        
+                        <button class="button button--anim">
+                            <span>
+                                <span>Product Details</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div class="container-fluid-03" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="row">
+            <div class="box-100-08 box-sm-3">
+                <h1 class="head6">Blog Posts</h1>
+            </div>
+
+            <div class="box-100-07">
+                <p class="para para-pad">
+                    From soil to soul : discover the joy of indoor gardening
+                </p>
+            </div>
+
+            <div class="box-100-06">
+                <a href="#"><p class="cap">See All</p></a>
+            </div>
+
+            <div class="box-93">
+                <div class="blog">
+                    <div class="item6">
+                        <a href="#"><img src="images/img_17.jpg" alt=""></a>
+                    </div>
+
+                    <div class="text-box">
+                        <h1 class="bl-head">The Health Benefits of Indoor Plants</h1>
+
+                        <div class="text-box-02">
+                            <p class="para-5">March 10, 2024</p>
+                            <div class="dot"><i class="fa-solid fa-circle"></i></div>
+                            <p class="para-5">by Editor</p>
+                        </div>
+
+                        <p class="para-6">
+                            In 2010, a Japanese study explored the effects of Shinrin-yoku or “forest bathing.” The study concluded that spending time in nature lowered stress levels...
+                        </p>
+
+                        <button type="button" class="bl-tag"><span>Read More </span></button>
+                    </div>
+                </div>
+
+                <div class="blog">
+                    <div class="item6">
+                        <a href="#"><img src="images/img_18.jpg" alt=""></a>
+                    </div>
+
+                    <div class="text-box">
+                        <h1 class="bl-head">Insights for Budding Gardeners</h1>
+
+                        <div class="text-box-02">
+                            <p class="para-5">April 18, 2024</p>
+                            <div class="dot"><i class="fa-solid fa-circle"></i></div>
+                            <p class="para-5">by Editor</p>
+                        </div>
+
+                        <p class="para-6">
+                            Whether you're a novice planter or a seasoned horticulturalist, discover practical advice, DIY projects, and botanical wisdom to help your garden flourish...
+                        </p>
+
+                        <button type="button" class="bl-tag"><span>Read More </span></button>
+                    </div>
+                </div>
+
+                <div class="blog">
+                    <div class="item6">
+                        <a href="#"><img src="images/img_19.webp" alt=""></a>
+                    </div>
+
+                    <div class="text-box">
+                        <h1 class="bl-head">Plant Science & Botanical Research</h1>
+
+                        <div class="text-box-02">
+                            <p class="para-5">May 23, 2024</p>
+                            <div class="dot"><i class="fa-solid fa-circle"></i></div>
+                            <p class="para-5">by Editor</p>
+                        </div>
+
+                        <p class="para-6">
+                            Uncover the stories behind your favorite plants, gardens, and botanical traditions, as we journey through time and across continents to discover the rich tapestry of...
+                        </p>
+
+                        <button type="button" class="bl-tag"><span>Read More </span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid-03" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="row">
+            <div class="box-100-09 box-sm-2">
+                <h1 class="head6">Testimonials</h1>
+            </div>
+
+            <div class="box-100-07">
+                <p class="para para-pad-2">
+                    Harvesting happiness : hear it from the green enthusiasts
+                </p>
+            </div>
+
+            <div class="box-100-06">
+                <a href="#"><p class="cap">See All</p></a>
+            </div>
+
+            <div class="box-93">
+                <div class="feedback">
+                    <div class="quote">
+                        <img src="images/quote.png" alt="">
+                    </div>
+
+                    <p class="fb-para">
+                        Working with EcoNest was a game-changer! Their attention to detail and commitment to excellence truly set them apart. I couldn't be happier with the results. Experienced the difference indeed.
+                    </p>
+
+                    <div class="fb-rating">
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="client"><img src="images/img_20.png" alt=""></div>
+
+                    <div class="fb-text">
+                        <div class="txt-1">
+                            <h1 class="fb-head-1">John Doe</h1>
+                        </div>
+
+                        <div class="txt-2">
+                            <h1 class="fb-head-2">Client</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <div class="quote">
+                        <img src="images/quote.png" alt="">
+                    </div>
+
+                    <p class="fb-para">
+                        Working with EcoNest was a breeze from start to finish. They listened to our needs and delivered a product that exceeded our expectations. Quick and efficient customer support, top-notch service.
+                    </p>
+
+                    <div class="fb-rating">
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="client"><img src="images/img_21.png" alt=""></div>
+
+                    <div class="fb-text">
+                        <div class="txt-1">
+                            <h1 class="fb-head-1">Lara Mills</h1>
+                        </div>
+
+                        <div class="txt-2">
+                            <h1 class="fb-head-2">Client</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <div class="quote">
+                        <img src="images/quote.png" alt="">
+                    </div>
+
+                    <p class="fb-para">
+                        The platform itself has minimalist design, many themes available and the customer support system is awesome. The professionalism and attention to detail are unmatched. Highly recommended!
+                    </p>
+
+                    <div class="fb-rating">
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+
+                        <div class="fb-star">
+                            <img src="images/star_1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="client"><img src="images/img_22.png" alt=""></div>
+
+                    <div class="fb-text">
+                        <div class="txt-1">
+                            <h1 class="fb-head-1">Jack Groff</h1>
+                        </div>
+
+                        <div class="txt-2">
+                            <h1 class="fb-head-2">Client</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-50"><i class="icon-contract"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid-06 box-sm-4" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="row">
+            <div class="box-20">
+                <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <h1 class="ic-head smart1">PRESTIGE</h1>
+
+                <p class="ic-para">We are rated 9/10!</p>
+            </div>
+
+            <div class="box-20">
+                <div class="icon">
+                    <i class="fa-solid fa-file-contract"></i>
+                </div>
+
+                <h1 class="ic-head smart2">CERTIFICATION</h1>
+
+                <p class="ic-para">Happy plant gurantee</p>
+            </div>
+
+            <div class="box-20">
+                <div class="icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+
+                <h1 class="ic-head smart1">DELIVERY</h1>
+
+                <p class="ic-para">Free and fast delivery</p>
+            </div>
+
+            <div class="box-20">
+                <div class="icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <h1 class="ic-head smart4">SUPPORT 24/7</h1>
+
+                <p class="ic-para">Dedicated customer care</p>
+            </div>
+
+            <div class="box-20">
+                <div class="icon">
+                    <i class="fa-solid fa-money-bills"></i>
+                </div>
+
+                <h1 class="ic-head smart5">PAYMENT</h1>
+
+                <p class="ic-para">Secure payment portal</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid-07" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="1500">
+        <div class="row">
+            <div class="box-85">
+                <div class="footer">
+                    <h1 class="ft-head">GET IN TOUCH</h1>
+
+                    <div class="ft-items">
+                        <div class="icon2"><i class="fa-solid fa-phone"></i></div>
+                        
+                        <div class="text-1">
+                            <h1 class="subhead">(+91)-1234567890</h1>
+                        </div>
+                    </div>
+
+                    <div class="ft-items">
+                        <div class="icon2"><i class="fa-solid fa-envelope"></i></div>
+                        
+                        <div class="text-1">
+                            <h1 class="subhead">econest@gmail.com</h1>
+                        </div>
+                    </div>
+
+                    <div class="ft-items">
+                        <div class="icon2"><i class="fa-solid fa-globe"></i></div>
+                        
+                        <div class="text-1">
+                            <h1 class="subhead">www.econest.com</h1>
+                        </div>
+                    </div>
+
+                    <div class="ft-items">
+                        <div class="icon2"><i class="fa-solid fa-location-dot"></i></div>
+                        
+                        <div class="text-1">
+                            <h1 class="subhead">Kolkata, West Bengal, India</h1>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer">
+                    <h1 class="ft-head-2">GUIDES</h1>
+                    <h1 class="subhead2">Find A Store</h1>
+                    <h1 class="subhead2">Become A Member</h1>
+                    <h1 class="subhead2">Send Us Feedback</h1>
+                </div>
+
+                <div class="footer">
+                    <h1 class="ft-head-3">GET HELP</h1>
+                    <h1 class="subhead2">Order Status</h1>
+                    <h1 class="subhead2">Dispatch & Delivery</h1>
+                    <h1 class="subhead2">Returns & Offers</h1>
+                    <h1 class="subhead2">Payment Options</h1>
+                    <h1 class="subhead2">Terms of Sale</h1>
+                    <h1 class="subhead2">Terms of Use</h1>
+                </div>
+
+                <div class="footer smart6">
+                    <h1 class="ft-head-4">COMPANY</h1>
+                    <h1 class="subhead2">About EcoNest</h1>
+                    <h1 class="subhead2">News</h1>
+                    <h1 class="subhead2">Careers</h1>
+                    <h1 class="subhead2">Investors</h1>
+                    <h1 class="subhead2">Sustainability</h1>
+                    <h1 class="subhead2">Privacy Policy</h1>
+                </div>
+
+                <div class="footer">
+                    <h1 class="ft-head-5">NEWSLETTER</h1>
+
+                    <p class="ft-para">
+                        Enter your email to receive
+                        daily news and get 20% off 
+                        coupon for all items.
+                    </p>
+
+                    <input type="text" class="mailbox" placeholder="Email address">
+                    <button type="button" class="subscribe">Subscribe</button>
+
+                    <div class="social-box">
+                        <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="social2"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="social3"><i class="fa-brands fa-x-twitter"></i></div>
+                        <div class="social4"><i class="fa-brands fa-youtube"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-85-02">
+                <div class="part">
+                    <p class="copyright">
+                        <span> © </span>
+                        <span>2024 EcoNest, Inc. All rights reserved</span>
+                    </p>
+                </div>
+
+                <div class="part-1">
+                    <div class="payment">
+                        <img src="images/footer-01.jpg" alt="">
+                    </div>
+
+                    <div class="payment">
+                        <img src="images/footer-02.jpg" alt="">
+                    </div>
+
+                    <div class="payment">
+                        <img src="images/footer-03.jpg" alt="">
+                    </div>
+
+                    <div class="payment">
+                        <img src="images/footer-04.jpg" alt="">
+                    </div>
+
+                    <div class="payment">
+                        <img src="images/footer-05.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <input type="checkbox" id="click">
+        <label for="click">
+        <i class="fab fa-facebook-messenger"></i>
+        <i class="fas fa-times"></i>
+        </label>
+        <div class="wrapper">
+            <div class="head-text">
+                Let's chat? - Online
+            </div>
+            <div class="chat-box">
+                <div class="desc-text">
+                    Please fill out the form below to start chatting with the next available agent.
+                </div>
+                <form action="#">
+                    <div class="field">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="field">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Explain your queries.." required></textarea>
+                    </div>
+                    <div class="field">
+                        <button type="submit">Start Chat</button>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+
+
+        
+<!-- Swiper Slider -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script  src="js/script.js"></script>
+
+<!-- Preloader -->
+<script src="js/loader.js"></script>
+
+<!-- Responsive nav bar -->
+<script src="js/script2.js"></script>
+
+
+<!-- AOS animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- dark -->
+<script src="js/main.js"></script>
+
+
+<!-- Chatbot -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script  src="js/chatbot.js"></script>
+
+
+</body>
+</html>
